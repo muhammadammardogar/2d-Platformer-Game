@@ -13,10 +13,11 @@ public class EnemyBehavior : MonoBehaviour
     private Vector2 roamDirection;
     private bool isRoaming = true;
     private bool isAttacking = false;
+    private Collider2D swordCollider;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Ensure your player has the tag "Player"
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
         roamDirection = GetRandomDirection();
         InvokeRepeating(nameof(ChangeRoamDirection), 3f, 3f);
@@ -49,7 +50,7 @@ public class EnemyBehavior : MonoBehaviour
     private void Roam()
     {
         isRoaming = true;
-        animator.Play("Skeleton Walking"); // Ensure this plays your walking animation
+        animator.SetBool("IsWalking", true); // Keep walking animation when roaming
         transform.Translate(roamDirection * roamSpeed * Time.deltaTime);
 
         // Reverse direction if hitting a wall
@@ -63,7 +64,7 @@ public class EnemyBehavior : MonoBehaviour
     private void FollowPlayer()
     {
         isRoaming = false;
-        animator.Play("Skeleton Walking"); // Keep walking animation while following the player
+        animator.SetBool("IsWalking", true);
         Vector2 direction = (player.position - transform.position).normalized;
         transform.Translate(direction * roamSpeed * Time.deltaTime);
     }
@@ -87,8 +88,8 @@ public class EnemyBehavior : MonoBehaviour
                 animator.SetBool("Attack2", true);
             }
 
-            // Assuming Player has a script with a method `TakeDamage(int amount)`
-            player.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+            // Enable sword collider during the attack
+            EnableSwordCollider();
 
             Invoke(nameof(ResetAttack), 1.5f); // Delay to reset attack
         }
@@ -99,6 +100,37 @@ public class EnemyBehavior : MonoBehaviour
         isAttacking = false;
         animator.SetBool("Attack1", false);
         animator.SetBool("Attack2", false);
+    }
+
+    private void EnableSwordCollider()
+    {
+        GameObject sword = transform.Find("Sword")?.gameObject;
+        if (sword == null)
+        {
+            Debug.LogError("Sword object not found!");
+            return;
+        }
+
+        swordCollider = sword.GetComponent<Collider2D>();
+        if (swordCollider == null)
+        {
+            Debug.LogError("Sword Collider2D not found!");
+            return;
+        }
+
+        swordCollider.enabled = true;
+    }
+    private void DisableSwordCollider()
+    {
+        GameObject sword = transform.Find("Sword").gameObject; // Adjust if necessary
+        if (sword != null)
+        {
+            Collider2D swordCollider = sword.GetComponent<Collider2D>();
+            if (swordCollider != null)
+            {
+                swordCollider.enabled = false;
+            }
+        }
     }
 
     private void ChangeRoamDirection()
@@ -126,5 +158,18 @@ public class EnemyBehavior : MonoBehaviour
     {
         animator.SetTrigger("Die"); // Add a death state if needed
         Destroy(gameObject, 1f); // Destroy after death animation plays
+    }
+
+    // Debug Log to check if sword collides with player
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (swordCollider != null && swordCollider.enabled)
+        {
+            if (other.CompareTag("Player"))
+            {
+                Debug.Log("Sword collided with player! Inflicting damage.");
+                player.GetComponent<PlayerHealth>()?.TakeDamage(damage);  // Apply damage to the player
+            }
+        }
     }
 }

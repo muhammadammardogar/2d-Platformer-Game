@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthUI();
         playerAnimator.SetTrigger("Hurt"); // Trigger hurt animation when taking damage
 
-        if (currentHealth <= 0)
+        if (currentHealth == 0)
         {
             Die();
         }
@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (healthUIText != null)
         {
-            healthUIText.text = "Health: " + currentHealth; // Update the health UI
+            healthUIText.text = "" + currentHealth; // Update the health UI
         }
     }
 
