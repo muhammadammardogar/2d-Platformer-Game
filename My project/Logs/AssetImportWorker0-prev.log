@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.55f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/Unity Projects/Project/My project
+C:/Unity Projects/2d-Platformer-Game/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54542
-Successfully changed project path to: E:/Unity Projects/Project/My project
-E:/Unity Projects/Project/My project
+54987
+Successfully changed project path to: C:/Unity Projects/2d-Platformer-Game/My project
+C:/Unity Projects/2d-Platformer-Game/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,18 +49,18 @@ E:/Unity Projects/Project/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1564]  Target information:
+Player connection [24768]  Target information:
 
-Player connection [1564]  * "[IP] 192.168.101.10 [Port] 0 [Flags] 2 [Guid] 3859772432 [EditorId] 3859772432 [Version] 1048832 [Id] WindowsEditor(7,Phoenix-AD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [24768]  * "[IP] 192.168.101.10 [Port] 0 [Flags] 2 [Guid] 3994700767 [EditorId] 3994700767 [Version] 1048832 [Id] WindowsEditor(7,Phoenix-AD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1564] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1564] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24768] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24768] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 29.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2514.38 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.55f1 (9f374180d209)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Unity Projects/Project/My project/Assets
+[Subsystems] Discovering subsystems at path C:/Unity Projects/2d-Platformer-Game/My project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -72,44 +72,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.077103 seconds.
-- Loaded All Assemblies, in  0.908 seconds
+Registered in 0.347874 seconds.
+- Loaded All Assemblies, in 10.758 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.472 seconds
-Domain Reload Profiling: 1362ms
-	BeginReloadAssembly (330ms)
+- Finished resetting the current domain, in  0.532 seconds
+Domain Reload Profiling: 11267ms
+	BeginReloadAssembly (7952ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (224ms)
-	LoadAllAssembliesAndSetupDomain (250ms)
-		LoadAssemblies (312ms)
+	RebuildCommonClasses (675ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (515ms)
+	LoadAllAssembliesAndSetupDomain (1573ms)
+		LoadAssemblies (7930ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (244ms)
-			TypeCache.Refresh (241ms)
-				TypeCache.ScanAssembly (215ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (1567ms)
+			TypeCache.Refresh (1565ms)
+				TypeCache.ScanAssembly (1118ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (473ms)
+	FinalizeReload (533ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (395ms)
+		SetupLoadedEditorAssemblies (446ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,50 +118,50 @@ Domain Reload Profiling: 1362ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.448 seconds
+- Loaded All Assemblies, in 11.965 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.321 seconds
-Domain Reload Profiling: 2750ms
-	BeginReloadAssembly (371ms)
+- Finished resetting the current domain, in  1.428 seconds
+Domain Reload Profiling: 13354ms
+	BeginReloadAssembly (412ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (127ms)
-	LoadAllAssembliesAndSetupDomain (846ms)
-		LoadAssemblies (790ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (155ms)
+	LoadAllAssembliesAndSetupDomain (11263ms)
+		LoadAssemblies (10713ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (318ms)
-			TypeCache.Refresh (274ms)
-				TypeCache.ScanAssembly (244ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1322ms)
+		AnalyzeDomain (845ms)
+			TypeCache.Refresh (795ms)
+				TypeCache.ScanAssembly (708ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1428ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1064ms)
+		SetupLoadedEditorAssemblies (1168ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
+			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (171ms)
-			ProcessInitializeOnLoadAttributes (719ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (74ms)
+			BeforeProcessingInitializeOnLoad (254ms)
+			ProcessInitializeOnLoadAttributes (744ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (72ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.40 seconds
-Refreshing native plugins compatible for Editor in 9.85 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.41 seconds
+Refreshing native plugins compatible for Editor in 36.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3960 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (Unknown). Loaded Objects now: 4423.
-Memory consumption went from 138.2 MB to 138.4 MB.
-Total: 7.617400 ms (FindLiveObjects: 0.390100 ms CreateObjectMapping: 0.202100 ms MarkObjects: 6.753800 ms  DeleteObjects: 0.270100 ms)
+Unloading 4114 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (241.5 KB). Loaded Objects now: 4579.
+Memory consumption went from 145.7 MB to 145.4 MB.
+Total: 5.605900 ms (FindLiveObjects: 0.461800 ms CreateObjectMapping: 0.219800 ms MarkObjects: 4.627900 ms  DeleteObjects: 0.295100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -178,858 +178,99 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 89566.621688 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/CharacterSheet.png
-  artifactKey: Guid(496562456fdbe6647887febf11640c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/CharacterSheet.png using Guid(496562456fdbe6647887febf11640c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 174563.039830 seconds.
+  path: Assets/Brackeys/2D Mega Pack/Characters/Soldiers/Soldiers.png
+  artifactKey: Guid(2164a1816f29acf45ad76327ffa671c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brackeys/2D Mega Pack/Characters/Soldiers/Soldiers.png using Guid(2164a1816f29acf45ad76327ffa671c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '31fefc34e84020ee02eb27da4a68c5dc') in 0.239315 seconds
+ -> (artifact id: 'c360db87b07b9f55d810dc8bbaa1649b') in 0.305293 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 10.534286 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/Animations
-  artifactKey: Guid(c661a1def58ff2946b0affed175d3451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/Animations using Guid(c661a1def58ff2946b0affed175d3451) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '088712eb59e6fd7e0d3a654e07a73df0') in 0.000697 seconds
+  Time since last request: 0.000036 seconds.
+  path: Assets/Brackeys/2D Mega Pack/Characters
+  artifactKey: Guid(d9b6c188ea84ee5449f418bc1623dfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brackeys/2D Mega Pack/Characters using Guid(d9b6c188ea84ee5449f418bc1623dfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f161cdffcf42a00f0190945d00e5b546') in 0.000922 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.913872 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/Animations/Character1
-  artifactKey: Guid(779ca1ae75b4d6540bf78709501083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Character/Animations/Character1 using Guid(779ca1ae75b4d6540bf78709501083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1ffd8a36e5462031dd66b7a640cc87b7') in 0.000667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.832402 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background
-  artifactKey: Guid(6adbfbab162026f4cb829740e1e90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background using Guid(6adbfbab162026f4cb829740e1e90207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'da6ed65cf7e5672c02c3eaa4d2ceda10') in 0.000652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.091154 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background1.png
-  artifactKey: Guid(9b45b88c36c56554ead974cff48f98bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background1.png using Guid(9b45b88c36c56554ead974cff48f98bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Brackeys/2D Mega Pack/Characters/Stickman/Stick_Limb.png
+  artifactKey: Guid(f34bece99f09dad4e8002e10e7eb9a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brackeys/2D Mega Pack/Characters/Stickman/Stick_Limb.png using Guid(f34bece99f09dad4e8002e10e7eb9a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ab33a2c5845f33dee3fe75c8358c36e6') in 0.026959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background4.png
-  artifactKey: Guid(0b211dc3d14c1ba459b21a44e5038f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background4.png using Guid(0b211dc3d14c1ba459b21a44e5038f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a460a3f8d2b1fb65ad92f2fb465fe501') in 0.024986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background3.png
-  artifactKey: Guid(cd139cad4817e7144a2c0c2bb7cf8fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background3.png using Guid(cd139cad4817e7144a2c0c2bb7cf8fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '78cbc2c998a373e338bbea87ce5b9d07') in 0.024952 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background5.png
-  artifactKey: Guid(0fbbe850674cd2342a0debf3a96b5810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Background/Background5.png using Guid(0fbbe850674cd2342a0debf3a96b5810) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '50b8b83658b56e8c54d4464d762501ea') in 0.039058 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.399061 seconds.
-  path: Assets/FeonY
-  artifactKey: Guid(c3bcfab53a610e540925a9c9092a2f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY using Guid(c3bcfab53a610e540925a9c9092a2f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd0d924b9684d0a1c6bf6696393ad7246') in 0.000718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.992695 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds
-  artifactKey: Guid(21060e7a74283e94e9f253a3085383b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds using Guid(21060e7a74283e94e9f253a3085383b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c5e6e4b6e8c7880cd43ca8a06996bcb7') in 0.000665 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.785775 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Scenes
-  artifactKey: Guid(eb70598aad02c574c9a2e505497f8f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Scenes using Guid(eb70598aad02c574c9a2e505497f8f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '28fb2fddf1d63695369883e8cc11312a') in 0.000659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.104671 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Scenes/Animated Pixel-Art Backgrounds Demo.unity
-  artifactKey: Guid(c83b82f617d453a47a7e198ea7db07d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Scenes/Animated Pixel-Art Backgrounds Demo.unity using Guid(c83b82f617d453a47a7e198ea7db07d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7afc57c873dfadceb77ca740104d8cf1') in 0.000696 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 15.651850 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0001.png
-  artifactKey: Guid(f6a9c097dd67686478c50767c234fdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0001.png using Guid(f6a9c097dd67686478c50767c234fdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c6a949cfc4312e72af9b51629ee1ff93') in 0.025523 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0006.png
-  artifactKey: Guid(69cdf95964aae714080c671865b4fe23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0006.png using Guid(69cdf95964aae714080c671865b4fe23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '95e2fc370ac4e3398d20e0ff6d17fd84') in 0.024421 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0004.png
-  artifactKey: Guid(32c827ea925f45b4f97b1d9b31604c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0004.png using Guid(32c827ea925f45b4f97b1d9b31604c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'fd89a5f095709e8d0ab0bbb40ebb1313') in 0.025020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0046.png
-  artifactKey: Guid(b9b78be3e806fc348be7b32031b2a299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0046.png using Guid(b9b78be3e806fc348be7b32031b2a299) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '120f5b31010adc28ae409c439de1d121') in 0.029838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0003.png
-  artifactKey: Guid(65431f59a94b0274383ddef036ed79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0003.png using Guid(65431f59a94b0274383ddef036ed79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e68364be6d9892be42c5401c693346b4') in 0.030120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0036.png
-  artifactKey: Guid(ad68bcee0da697544810a5f0d89afea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0036.png using Guid(ad68bcee0da697544810a5f0d89afea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '18456dd6ac58dde022b5655b77d9308d') in 0.034593 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0031.png
-  artifactKey: Guid(a6190171bdd56154790e33e9fc64fbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0031.png using Guid(a6190171bdd56154790e33e9fc64fbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a7748bb11aae01caddf781b6e55bec7f') in 0.025355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0027.png
-  artifactKey: Guid(4936a9f2a5bf9ff4bb683b4fa035338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0027.png using Guid(4936a9f2a5bf9ff4bb683b4fa035338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '93ead91bca787ff97b8ca27fe27748fc') in 0.024907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0026.png
-  artifactKey: Guid(81af7c79bf352924484cc1be3240c5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0026.png using Guid(81af7c79bf352924484cc1be3240c5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '6c60a6d087833d603d27e5eb2369e8f8') in 0.023023 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0021.png
-  artifactKey: Guid(1a4b53abc1e6c98429f9f6337b9298a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0021.png using Guid(1a4b53abc1e6c98429f9f6337b9298a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8789624ff3b9115d3b6be5c97ce7e819') in 0.028404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0013.png
-  artifactKey: Guid(08c637a623eb8524d95f5e6e853c920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0013.png using Guid(08c637a623eb8524d95f5e6e853c920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '431c15d0b474e033571065d0135963dc') in 0.030100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0005.png
-  artifactKey: Guid(c262e62a071c79847b0dbd63577057bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0005.png using Guid(c262e62a071c79847b0dbd63577057bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd47ea97c85fc7d30a1a8afade94eea6b') in 0.022335 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0035.png
-  artifactKey: Guid(0a8886119b62a744fb1ade0149d64668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0035.png using Guid(0a8886119b62a744fb1ade0149d64668) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '65c59c4a5d6f495b7606ba9de95afbe2') in 0.022477 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0015.png
-  artifactKey: Guid(54e23b3aa9423cb4fbf2ff86cf2bbcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0015.png using Guid(54e23b3aa9423cb4fbf2ff86cf2bbcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '907b598d9f91cb9cce50e0f5bef64b0e') in 0.020728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0018.png
-  artifactKey: Guid(3a1d23cbaf36fce4aac962a747753c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0018.png using Guid(3a1d23cbaf36fce4aac962a747753c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '80df38e15553cc99ee2a53365c418fb3') in 0.021925 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0024.png
-  artifactKey: Guid(e7acf1a7424c1b14c8b3bf5a3b43b872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0024.png using Guid(e7acf1a7424c1b14c8b3bf5a3b43b872) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '48e7b59b88e8957769276e2f302400ae') in 0.022174 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0042.png
-  artifactKey: Guid(108498e46f2b3c8418061c7f6733f9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0042.png using Guid(108498e46f2b3c8418061c7f6733f9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '251fe4b3acb3da5a8241d158219911cb') in 0.033820 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0058.png
-  artifactKey: Guid(0fa707ef7d49bed4481b5ecb89b0e62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0058.png using Guid(0fa707ef7d49bed4481b5ecb89b0e62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '93a598d13c2030960a24eb4ad70d35c3') in 0.021392 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0014.png
-  artifactKey: Guid(ea4875d73cddc024b8394df3aaaa71f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0014.png using Guid(ea4875d73cddc024b8394df3aaaa71f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ba03da548e2dde76a8903be5196bab93') in 0.021404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0052.png
-  artifactKey: Guid(1c491299ca8011b4e854095031083dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0052.png using Guid(1c491299ca8011b4e854095031083dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '68cf87bc04452bd081d02d965382bc72') in 0.021862 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0049.png
-  artifactKey: Guid(98d40b89a711d5b46bc96d61e8a4f75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0049.png using Guid(98d40b89a711d5b46bc96d61e8a4f75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c1b06f316de57db8bd1d98394eb84bec') in 0.021010 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0056.png
-  artifactKey: Guid(d80855ebec01f794d818a891ac73e202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0056.png using Guid(d80855ebec01f794d818a891ac73e202) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '815d0dd3ce42a9856c05cd66264f8021') in 0.019399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.051517 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0060.png
-  artifactKey: Guid(7cc1e56b02a181d4b9a40632b5a32a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0060.png using Guid(7cc1e56b02a181d4b9a40632b5a32a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd4f55a3cdba64eacc797d79ceac9c049') in 0.021972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0065.png
-  artifactKey: Guid(d51ae9e8c526cac41bf9d7f22be08b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0065.png using Guid(d51ae9e8c526cac41bf9d7f22be08b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f5fc9be9523131c0c641491f896039af') in 0.020755 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0071.png
-  artifactKey: Guid(72dead20587b39346ad1a4ab1b677f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0071.png using Guid(72dead20587b39346ad1a4ab1b677f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0562c86c1595c290715419e68023a70b') in 0.021748 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0064.png
-  artifactKey: Guid(5436d5faaed41b34db6b6b6507dbe364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0064.png using Guid(5436d5faaed41b34db6b6b6507dbe364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1c4cd9e3c782deda139e60dd01a71d96') in 0.035668 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0095.png
-  artifactKey: Guid(60725669f44655e4e86ea904e11035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0095.png using Guid(60725669f44655e4e86ea904e11035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd208a4c8e848cbf7c3eea9d6e038acc7') in 0.021626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0077.png
-  artifactKey: Guid(eb72864b70dec234bbbec9e4951769a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0077.png using Guid(eb72864b70dec234bbbec9e4951769a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e39d565fcd9a1732ec651537b39e6111') in 0.022091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0086.png
-  artifactKey: Guid(66ce84307e9c68b42940f1f0c6c8c9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0086.png using Guid(66ce84307e9c68b42940f1f0c6c8c9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '12631fa08b465bce6d9b748a39b23b26') in 0.027533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0089.png
-  artifactKey: Guid(41e45e4de692c0849be122aebd13f8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0089.png using Guid(41e45e4de692c0849be122aebd13f8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1fd406d77e89638022e0d25449db9d22') in 0.024361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0094.png
-  artifactKey: Guid(ff348adf919cbd240b09dc8925ff05e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0094.png using Guid(ff348adf919cbd240b09dc8925ff05e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '73d1c0bb008c81fe98bcacc7d3e6e2a6') in 0.019643 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0092.png
-  artifactKey: Guid(8d0229b69a29b6f40b2fa30634c4ef8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0092.png using Guid(8d0229b69a29b6f40b2fa30634c4ef8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'cac2660e3428260d8c89d9424ece9a70') in 0.019498 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0080.png
-  artifactKey: Guid(ec76e0e717e2e954987898506e280c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0080.png using Guid(ec76e0e717e2e954987898506e280c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b2ce581d2c2f5133abf5a71d6ddb8a08') in 0.036972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0063.png
-  artifactKey: Guid(0ca142b745725b346a985748f71299a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0063.png using Guid(0ca142b745725b346a985748f71299a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '17e5fa5f1ff1bdf7ba0f9899ff176f49') in 0.019252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0102.png
-  artifactKey: Guid(096f4388d520544429fc2f99a25a20b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0102.png using Guid(096f4388d520544429fc2f99a25a20b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0920a1b1d95fa0ea16906b2d8472fcab') in 0.018329 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0091.png
-  artifactKey: Guid(f735bee1e6ac40940999943afdd3c888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0091.png using Guid(f735bee1e6ac40940999943afdd3c888) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '5761cc7e638e129891074eb73687fbb1') in 0.019436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0075.png
-  artifactKey: Guid(8040998ea6de7284391fb35bac7f08e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0075.png using Guid(8040998ea6de7284391fb35bac7f08e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9ade8237149ec4409b202b3c379e4580') in 0.020911 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.007037 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0105.png
-  artifactKey: Guid(dc1b610f14bbbd84fbe1ee0fd13763df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0105.png using Guid(dc1b610f14bbbd84fbe1ee0fd13763df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'bfe51bf038aecfcca32f2f0651ccb11b') in 0.043923 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0120.png
-  artifactKey: Guid(8cbc8792441efbf428d9c09cccb3d4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0120.png using Guid(8cbc8792441efbf428d9c09cccb3d4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1c77558046d3c139c6ee2b0855ee9e75') in 0.029048 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0118.png
-  artifactKey: Guid(6484538766b27b14081ba681d5f4d904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0118.png using Guid(6484538766b27b14081ba681d5f4d904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ec70266c3b5690657aab9193ae85b295') in 0.021462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0147.png
-  artifactKey: Guid(cefe6ad9af171d14487fb57331c68037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0147.png using Guid(cefe6ad9af171d14487fb57331c68037) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b406150646671ad9df8a8b8389da06de') in 0.036328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0125.png
-  artifactKey: Guid(db2b3d513b766e242be1153eee6d1628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0125.png using Guid(db2b3d513b766e242be1153eee6d1628) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '92d23d66d27670e4f6757a6c28d9af14') in 0.018878 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0146.png
-  artifactKey: Guid(63e9a71257aebe74787ae64715f887e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0146.png using Guid(63e9a71257aebe74787ae64715f887e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '11444518d8cd0d44149318c23505dec1') in 0.017591 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0108.png
-  artifactKey: Guid(a5bbaa1eee2756541a2d9b45e662bf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0108.png using Guid(a5bbaa1eee2756541a2d9b45e662bf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ee003c12eb1d693afdbfe8a73869354b') in 0.022586 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0115.png
-  artifactKey: Guid(af2e8d9feb105044c8eab93ea38fdf7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0115.png using Guid(af2e8d9feb105044c8eab93ea38fdf7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a54f234ecca46d44d5f5dc2b26cd48a2') in 0.022121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0139.png
-  artifactKey: Guid(09bc31b77e7f268468fba88e5ab63452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0139.png using Guid(09bc31b77e7f268468fba88e5ab63452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a24f95bf4dd465c10b807cee706a5db3') in 0.020636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0144.png
-  artifactKey: Guid(783d818f395e6ef4ab048bf02226b6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0144.png using Guid(783d818f395e6ef4ab048bf02226b6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8ab4bf945f89ecaf878a796fef54aac1') in 0.021438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0111.png
-  artifactKey: Guid(218c354e3e964bf499809bd016e4c5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0111.png using Guid(218c354e3e964bf499809bd016e4c5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '21be79524646713ec5299e3da882c075') in 0.021105 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0143.png
-  artifactKey: Guid(c53d56b32e7aa19459c868ef7eee3cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0143.png using Guid(c53d56b32e7aa19459c868ef7eee3cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '046428c20239eb1b748e427562c7c3cc') in 0.020965 seconds
+ -> (artifact id: '9cd16429f540476af82cab78d0d26256') in 0.044883 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0142.png
-  artifactKey: Guid(a3bba89997ebfe54ab1a7893853293a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0142.png using Guid(a3bba89997ebfe54ab1a7893853293a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  path: Assets/Brackeys/2D Mega Pack/Characters/Stickman
+  artifactKey: Guid(149ac9786c39a364b928bf0b60e6efb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brackeys/2D Mega Pack/Characters/Stickman using Guid(149ac9786c39a364b928bf0b60e6efb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5a5187df52d5ed7f26e9dacc2f2e5d43') in 0.000718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Brackeys/2D Mega Pack/Characters/Miner.png
+  artifactKey: Guid(774fe8dccef69a44d9179e4529aea50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brackeys/2D Mega Pack/Characters/Miner.png using Guid(774fe8dccef69a44d9179e4529aea50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '68570e31c88c3ecf9e00f9e0e2aa9b86') in 0.018922 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0117.png
-  artifactKey: Guid(48600368edbcf504682f429e88b00207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0117.png using Guid(48600368edbcf504682f429e88b00207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '82268276551b9a29ef86d7c1569aa421') in 0.021102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0119.png
-  artifactKey: Guid(9c2f993ccc822ee41999aad698a5ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0119.png using Guid(9c2f993ccc822ee41999aad698a5ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dec59da04a8aa53aa7820c594f912d86') in 0.017526 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0110.png
-  artifactKey: Guid(04a8dfb18164a4e47bd566c996fa0bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FeonY/Animated Pixel-Art Backgrounds/Art/Animations/Pixel-Art Background 2/frame0110.png using Guid(04a8dfb18164a4e47bd566c996fa0bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '01b26788e0865371c6fece87f222ca10') in 0.020398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 25.243980 seconds.
-  path: Assets/Painted HQ 2D Forest Medieval Background/evening/cloud02.png
-  artifactKey: Guid(d9333f218377dda4ba9650ec8f76c40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Painted HQ 2D Forest Medieval Background/evening/cloud02.png using Guid(d9333f218377dda4ba9650ec8f76c40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '26b2ffdabbe0d1ccd3a58c6883d42c3d') in 0.036156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Painted HQ 2D Forest Medieval Background/evening/sky.png
-  artifactKey: Guid(f55507d454bdf4147a49efc80be9332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Painted HQ 2D Forest Medieval Background/evening/sky.png using Guid(f55507d454bdf4147a49efc80be9332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '172c033ff556938f69bc82a08b0cde6a') in 0.032599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.903119 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround2.asset
-  artifactKey: Guid(c6941f63165d0f543a360881bdac8552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround2.asset using Guid(c6941f63165d0f543a360881bdac8552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c22c401d5d2f572f01c80304319fd0c8') in 0.087596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant5.asset
-  artifactKey: Guid(45ed91abaeac6e3409e4c948ea7012e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant5.asset using Guid(45ed91abaeac6e3409e4c948ea7012e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3d2e35334bd7f5581b4b15450c3172f2') in 0.027274 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant9.asset
-  artifactKey: Guid(40139b21f4647644197a63fa35e8e147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant9.asset using Guid(40139b21f4647644197a63fa35e8e147) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b676be60bbcd35ce855104e6916ba3b0') in 0.031549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant16.asset
-  artifactKey: Guid(2a1b96d31d2dcc34e896cd03c8fd903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant16.asset using Guid(2a1b96d31d2dcc34e896cd03c8fd903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'fd6b02486e2a6cccd8d9efe590da9858') in 0.030452 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround3.asset
-  artifactKey: Guid(b5786621548ac4249afcc66e075d6958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround3.asset using Guid(b5786621548ac4249afcc66e075d6958) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c6da0842be78cb14308f1ba2723b0220') in 0.030437 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround7.asset
-  artifactKey: Guid(580be166b73687b4384528b4286f0db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround7.asset using Guid(580be166b73687b4384528b4286f0db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0b7b952b99b7dca6a30006dc8b3e2608') in 0.023088 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant3.asset
-  artifactKey: Guid(f041f16b65ad7ae4fb8f497cf7ed797f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant3.asset using Guid(f041f16b65ad7ae4fb8f497cf7ed797f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a3117409fb18652ddc318029ac7d6890') in 0.023306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence3.asset
-  artifactKey: Guid(e882cae012273434db7e8f021e62607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence3.asset using Guid(e882cae012273434db7e8f021e62607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '627ab3669d03e2e3acc7eac1850c0886') in 0.023667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround8.asset
-  artifactKey: Guid(3690a42729c61ae40b8501ad15359dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround8.asset using Guid(3690a42729c61ae40b8501ad15359dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '852417bbb14ee429352193e51ab494b9') in 0.025455 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant8.asset
-  artifactKey: Guid(ce542d9cdb0ec834bbd94e5c95d6d1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant8.asset using Guid(ce542d9cdb0ec834bbd94e5c95d6d1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7766d63033ddb726e730f64ef4de1c6f') in 0.034936 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround2.asset
-  artifactKey: Guid(2daa08c11685a174ca5f1d460dedf301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround2.asset using Guid(2daa08c11685a174ca5f1d460dedf301) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3a1bfe297df402f70f33fe304148a286') in 0.029096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround6.asset
-  artifactKey: Guid(0fa06a6ba6bc59849b171ed5932145d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround6.asset using Guid(0fa06a6ba6bc59849b171ed5932145d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a3d8ea2c800db4c2ce900d47d8693fc4') in 0.019573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant10.asset
-  artifactKey: Guid(6cb68ec73134b5c4e9d3506a60218931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant10.asset using Guid(6cb68ec73134b5c4e9d3506a60218931) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c7a96a1929f4704fbfa07bc4c0a1c031') in 0.017813 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence5.asset
-  artifactKey: Guid(930e1631852933741874f673e047798c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence5.asset using Guid(930e1631852933741874f673e047798c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e68ce5ae57639e5ab17065cc4dbc593c') in 0.016602 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround17.asset
-  artifactKey: Guid(812e0425d85bae645ab0e947dc2077b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround17.asset using Guid(812e0425d85bae645ab0e947dc2077b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '748af1117e588f441d7db0316fc14854') in 0.017224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround22.asset
-  artifactKey: Guid(6fdb451d5be3c224e845031c34bccfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround22.asset using Guid(6fdb451d5be3c224e845031c34bccfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '36a0a31db2c0375e005486fa0a253825') in 0.021363 seconds
+ -> (artifact id: '7ebc9caa0bd1fa58441ec5893fc90d51') in 0.047985 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.100 seconds
+- Loaded All Assemblies, in  3.650 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.374 seconds
-Domain Reload Profiling: 3453ms
-	BeginReloadAssembly (1279ms)
+- Finished resetting the current domain, in  1.293 seconds
+Domain Reload Profiling: 4903ms
+	BeginReloadAssembly (2479ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (852ms)
+		DisableScriptedObjects (2032ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (85ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (118ms)
-	LoadAllAssembliesAndSetupDomain (576ms)
-		LoadAssemblies (864ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (84ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (134ms)
+	LoadAllAssembliesAndSetupDomain (889ms)
+		LoadAssemblies (1177ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (11ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (1375ms)
+	FinalizeReload (1294ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1042ms)
+		SetupLoadedEditorAssemblies (1000ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (193ms)
-			ProcessInitializeOnLoadAttributes (672ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (73ms)
+			BeforeProcessingInitializeOnLoad (244ms)
+			ProcessInitializeOnLoadAttributes (602ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (68ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 10.11 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 33.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3954 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (213.5 KB). Loaded Objects now: 4442.
-Memory consumption went from 142.1 MB to 141.9 MB.
-Total: 6.342300 ms (FindLiveObjects: 0.428200 ms CreateObjectMapping: 0.183300 ms MarkObjects: 5.474700 ms  DeleteObjects: 0.254300 ms)
+Unloading 4094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (213.6 KB). Loaded Objects now: 4602.
+Memory consumption went from 145.8 MB to 145.6 MB.
+Total: 4.696400 ms (FindLiveObjects: 0.386100 ms CreateObjectMapping: 0.172300 ms MarkObjects: 3.906700 ms  DeleteObjects: 0.230200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
