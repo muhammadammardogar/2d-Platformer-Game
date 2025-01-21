@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Coin
   - Enemy
+  - Sword
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 

@@ -5,12 +5,15 @@ public class EnemyBehavior : MonoBehaviour
     public float roamSpeed = 2f;
     public float detectionRange = 5f;
     public float attackRange = 1.5f;
-    public int health = 100;
+    public int maxHealth = 100;
     public int damage = 10;
+    public float leftBoundary; // Define in the Inspector
+    public float rightBoundary; // Define in the Inspector
 
+    private int currentHealth;
     private Transform player;
     private Animator animator;
-    private Vector2 roamDirection;
+    private bool isMovingRight = true; // Determines patrol direction
     private bool isRoaming = true;
     private bool isAttacking = false;
     private Collider2D swordCollider;
@@ -19,13 +22,14 @@ public class EnemyBehavior : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
-        roamDirection = GetRandomDirection();
-        InvokeRepeating(nameof(ChangeRoamDirection), 3f, 3f);
+
+        // Initialize health
+        currentHealth = maxHealth;
     }
 
     private void Update()
     {
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Die();
             return;
@@ -43,21 +47,36 @@ public class EnemyBehavior : MonoBehaviour
         }
         else if (isRoaming)
         {
-            Roam();
+            Patrol();
         }
     }
 
-    private void Roam()
+    private void Patrol()
     {
-        isRoaming = true;
-        animator.SetBool("IsWalking", true); // Keep walking animation when roaming
-        transform.Translate(roamDirection * roamSpeed * Time.deltaTime);
+        animator.SetBool("IsWalking", true);
 
-        // Reverse direction if hitting a wall
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, roamDirection, 0.5f);
-        if (hit.collider != null)
+        // Move in the current direction
+        if (isMovingRight)
         {
-            roamDirection = GetRandomDirection();
+            transform.Translate(Vector2.right * roamSpeed * Time.deltaTime);
+
+            // Reverse direction if at the right boundary
+            if (transform.position.x >= rightBoundary)
+            {
+                isMovingRight = false;
+                Flip();
+            }
+        }
+        else
+        {
+            transform.Translate(Vector2.left * roamSpeed * Time.deltaTime);
+
+            // Reverse direction if at the left boundary
+            if (transform.position.x <= leftBoundary)
+            {
+                isMovingRight = true;
+                Flip();
+            }
         }
     }
 
@@ -65,8 +84,21 @@ public class EnemyBehavior : MonoBehaviour
     {
         isRoaming = false;
         animator.SetBool("IsWalking", true);
+
         Vector2 direction = (player.position - transform.position).normalized;
         transform.Translate(direction * roamSpeed * Time.deltaTime);
+
+        // Flip based on player position
+        if (player.position.x > transform.position.x && !isMovingRight)
+        {
+            isMovingRight = true;
+            Flip();
+        }
+        else if (player.position.x < transform.position.x && isMovingRight)
+        {
+            isMovingRight = false;
+            Flip();
+        }
     }
 
     private void AttackPlayer()
@@ -120,35 +152,21 @@ public class EnemyBehavior : MonoBehaviour
 
         swordCollider.enabled = true;
     }
+
     private void DisableSwordCollider()
     {
-        GameObject sword = transform.Find("Sword").gameObject; // Adjust if necessary
-        if (sword != null)
+        if (swordCollider != null)
         {
-            Collider2D swordCollider = sword.GetComponent<Collider2D>();
-            if (swordCollider != null)
-            {
-                swordCollider.enabled = false;
-            }
+            swordCollider.enabled = false;
         }
     }
 
-    private void ChangeRoamDirection()
+    public void TakeDamage(int damageAmount)
     {
-        roamDirection = GetRandomDirection();
-    }
-
-    private Vector2 GetRandomDirection()
-    {
-        return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-    }
-
-    public void TakeDamage(int amount)
-    {
-        health -= amount;
+        currentHealth -= damageAmount;
         animator.SetTrigger("Hurt");
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -156,8 +174,15 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Die()
     {
-        animator.SetTrigger("Die"); // Add a death state if needed
-        Destroy(gameObject, 1f); // Destroy after death animation plays
+        animator.SetTrigger("Die"); // Trigger the death animation
+        Destroy(gameObject, 1f);    // Destroy the enemy after the animation
+    }
+
+    private void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 
     // Debug Log to check if sword collides with player
@@ -168,7 +193,7 @@ public class EnemyBehavior : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 Debug.Log("Sword collided with player! Inflicting damage.");
-                player.GetComponent<PlayerHealth>()?.TakeDamage(damage);  // Apply damage to the player
+                player.GetComponent<PlayerHealth>()?.TakeDamage(damage); // Apply damage to the player
             }
         }
     }
