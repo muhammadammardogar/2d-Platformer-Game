@@ -83,11 +83,15 @@ public class HeroKnight : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = false;
             m_facingDirection = 1;
+            // Ensure AttackPoint is on the right side
+            AttackPoint.localPosition = new Vector3(Mathf.Abs(AttackPoint.localPosition.x), AttackPoint.localPosition.y, AttackPoint.localPosition.z);
         }
         else if (inputX < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
             m_facingDirection = -1;
+            // Ensure AttackPoint is on the left side
+            AttackPoint.localPosition = new Vector3(-Mathf.Abs(AttackPoint.localPosition.x), AttackPoint.localPosition.y, AttackPoint.localPosition.z);
         }
 
         // Move
@@ -208,9 +212,27 @@ public class HeroKnight : MonoBehaviour
             }
         }
     }
+    // For Attack
     public void Attack()
     {
-        //Physics2D.OverlapCircle(AttackPoint,)
+       Collider2D collInfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, attackLayer);
+        if(collInfo != null) 
+        {
+            Debug.Log(collInfo.gameObject.name + " takes damage");
+            if(collInfo.gameObject.GetComponent<EnemyBehavior>() != null)
+            {
+                collInfo.gameObject.GetComponent<EnemyBehavior>().TakeDamage(20);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if(AttackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(AttackPoint.position, AttackRadius);
     }
     // Animation Events
     // Called in slide animation.
