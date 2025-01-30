@@ -3,26 +3,35 @@ using TMPro;
 
 public class CoinCollector : MonoBehaviour
 {
-    // Reference to the TextMeshPro UI text object
     public TextMeshProUGUI coinText;
+    public AudioSource coinSound; // Reference to the AudioSource
 
-    // Counter for the collected coins
     private int coinCount = 0;
 
-    // Trigger detection for coin collection
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            // Prevent triggering more than once
-            Destroy(collision.gameObject);
+            Coin coin = collision.gameObject.GetComponent<Coin>();
+            if (coin != null && !coin.IsCollected)
+            {
+                coin.MarkCollected(); // Mark the coin as collected
 
-            // Increment the coin counter
-            coinCount++;
+                // Play the coin collection sound
+                if (coinSound != null)
+                {
+                    coinSound.Play();
+                }
 
-            // Update the text on screen
-            coinText.text = "" + coinCount;
+                // Increment the coin counter
+                coinCount++;
+
+                // Update the UI text
+                coinText.text = coinCount.ToString();
+
+                // Destroy the coin after a short delay
+                Destroy(collision.gameObject, 0.05f);
+            }
         }
     }
-
 }

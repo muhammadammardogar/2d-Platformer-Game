@@ -11,7 +11,8 @@ public class HeroKnight : MonoBehaviour
 
     [SerializeField] float m_attackRange = 1.0f;  // Attack range to check for nearby enemies
     [SerializeField] int m_attackDamage = 10;      // Damage dealt by the attack
-
+    [SerializeField] private AudioSource walkSound;
+    [SerializeField] private AudioSource attackSound;
     private Animator m_animator;
     private Rigidbody2D m_body2d;
     private Sensor_HeroKnight m_groundSensor;
@@ -31,7 +32,7 @@ public class HeroKnight : MonoBehaviour
 
     //for Attack
     public Transform AttackPoint;
-    public float AttackRadius=1f;
+    public float AttackRadius = 1f;
     public LayerMask attackLayer;
     // Use this for initialization
     void Start()
@@ -140,6 +141,10 @@ public class HeroKnight : MonoBehaviour
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            if (attackSound != null)
+            {
+                attackSound.PlayOneShot(attackSound.clip);
+            }
         }
 
         // Block
@@ -173,11 +178,15 @@ public class HeroKnight : MonoBehaviour
         }
 
         // Run
-        else if (Mathf.Abs(inputX) > Mathf.Epsilon)
+        else if (Mathf.Abs(inputX) > Mathf.Epsilon && m_grounded)
         {
             // Reset timer
             m_delayToIdle = 0.05f;
             m_animator.SetInteger("AnimState", 1);
+            if (walkSound != null && !walkSound.isPlaying)
+            {
+                walkSound.Play();
+            }
         }
 
         // Idle
@@ -187,6 +196,10 @@ public class HeroKnight : MonoBehaviour
             m_delayToIdle -= Time.deltaTime;
             if (m_delayToIdle < 0)
                 m_animator.SetInteger("AnimState", 0);
+            if (walkSound != null && walkSound.isPlaying)
+            {
+                walkSound.Stop();
+            }
         }
     }
 
@@ -215,11 +228,11 @@ public class HeroKnight : MonoBehaviour
     // For Attack
     public void Attack()
     {
-       Collider2D collInfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, attackLayer);
-        if(collInfo != null) 
+        Collider2D collInfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, attackLayer);
+        if (collInfo != null)
         {
             Debug.Log(collInfo.gameObject.name + " takes damage");
-            if(collInfo.gameObject.GetComponent<EnemyBehavior>() != null)
+            if (collInfo.gameObject.GetComponent<EnemyBehavior>() != null)
             {
                 collInfo.gameObject.GetComponent<EnemyBehavior>().TakeDamage(20);
             }
@@ -228,7 +241,7 @@ public class HeroKnight : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if(AttackPoint == null)
+        if (AttackPoint == null)
         {
             return;
         }

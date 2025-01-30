@@ -7,23 +7,35 @@ public class EnemyBehavior : MonoBehaviour
     public float attackRange = 1.5f;
     public int maxHealth = 100;
     public int damage = 10;
-    public float leftBoundary; // Define in the Inspector
-    public float rightBoundary; // Define in the Inspector
+    public float leftBoundary;
+    public float rightBoundary;
 
     private int currentHealth;
     private Transform player;
+    private PlayerHealth playerHealth;
     private Animator animator;
-    private bool isMovingRight = true; // Determines patrol direction
+    private bool isMovingRight = true;
     private bool isRoaming = true;
     private bool isAttacking = false;
     private Collider2D swordCollider;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource attackSound; //  Attack sound
+
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        animator = GetComponent<Animator>();
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+            playerHealth = playerObject.GetComponent<PlayerHealth>();
+        }
+        else
+        {
+            Debug.LogError("Player not found! Make sure the player has the correct tag.");
+        }
 
-        // Initialize health
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
@@ -32,6 +44,13 @@ public class EnemyBehavior : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            return;
+        }
+
+        // Stop enemy actions if player is dead
+        if (playerHealth == null || playerHealth.IsDead())
+        {
+            StopAllActions();
             return;
         }
 
@@ -55,12 +74,9 @@ public class EnemyBehavior : MonoBehaviour
     {
         animator.SetBool("IsWalking", true);
 
-        // Move in the current direction
         if (isMovingRight)
         {
             transform.Translate(Vector2.right * roamSpeed * Time.deltaTime);
-
-            // Reverse direction if at the right boundary
             if (transform.position.x >= rightBoundary)
             {
                 isMovingRight = false;
@@ -70,8 +86,6 @@ public class EnemyBehavior : MonoBehaviour
         else
         {
             transform.Translate(Vector2.left * roamSpeed * Time.deltaTime);
-
-            // Reverse direction if at the left boundary
             if (transform.position.x <= leftBoundary)
             {
                 isMovingRight = true;
@@ -88,7 +102,6 @@ public class EnemyBehavior : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
         transform.Translate(direction * roamSpeed * Time.deltaTime);
 
-        // Flip based on player position
         if (player.position.x > transform.position.x && !isMovingRight)
         {
             isMovingRight = true;
@@ -107,23 +120,26 @@ public class EnemyBehavior : MonoBehaviour
         {
             isAttacking = true;
 
-            // Randomly choose an attack
-            bool useFirstAttack = Random.value > 0.5f;
-            if (useFirstAttack)
+            // Stop attack if player is dead
+            if (playerHealth.IsDead())
             {
-                animator.SetBool("Attack1", true);
-                animator.SetBool("Attack2", false);
-            }
-            else
-            {
-                animator.SetBool("Attack1", false);
-                animator.SetBool("Attack2", true);
+                StopAllActions();
+                return;
             }
 
-            // Enable sword collider during the attack
+            bool useFirstAttack = Random.value > 0.5f;
+            animator.SetBool("Attack1", useFirstAttack);
+            animator.SetBool("Attack2", !useFirstAttack);
+
             EnableSwordCollider();
 
-            Invoke(nameof(ResetAttack), 1.5f); // Delay to reset attack
+            // Play the attack sound 
+            if (attackSound != null && !attackSound.isPlaying)
+            {
+                attackSound.Play();
+            }
+
+            Invoke(nameof(ResetAttack), 1.5f);
         }
     }
 
@@ -137,28 +153,15 @@ public class EnemyBehavior : MonoBehaviour
     private void EnableSwordCollider()
     {
         GameObject sword = transform.Find("Sword")?.gameObject;
-        if (sword == null)
-        {
-            Debug.LogError("Sword object not found!");
-            return;
-        }
+        if (sword == null) return;
 
         swordCollider = sword.GetComponent<Collider2D>();
-        if (swordCollider == null)
-        {
-            Debug.LogError("Sword Collider2D not found!");
-            return;
-        }
-
-        swordCollider.enabled = true;
+        if (swordCollider != null) swordCollider.enabled = true;
     }
 
     private void DisableSwordCollider()
     {
-        if (swordCollider != null)
-        {
-            swordCollider.enabled = false;
-        }
+        if (swordCollider != null) swordCollider.enabled = false;
     }
 
     public void TakeDamage(int damageAmount)
@@ -166,16 +169,13 @@ public class EnemyBehavior : MonoBehaviour
         currentHealth -= damageAmount;
         animator.SetTrigger("Hurt");
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
     }
 
     private void Die()
     {
-        animator.SetTrigger("Die"); // Trigger the death animation
-        Destroy(gameObject, 1f);    // Destroy the enemy after the animation
+        animator.SetTrigger("Die");
+        Destroy(gameObject, 1f);
     }
 
     private void Flip()
@@ -185,16 +185,20 @@ public class EnemyBehavior : MonoBehaviour
         transform.localScale = localScale;
     }
 
-    // Debug Log to check if sword collides with player
+    private void StopAllActions()
+    {
+        isAttacking = false;
+        isRoaming = false;
+        animator.SetBool("IsWalking", false);
+        animator.SetBool("Attack1", false);
+        animator.SetBool("Attack2", false);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (swordCollider != null && swordCollider.enabled)
+        if (swordCollider != null && swordCollider.enabled && other.CompareTag("Player"))
         {
-            if (other.CompareTag("Player"))
-            {
-                Debug.Log("Sword collided with player! Inflicting damage.");
-                player.GetComponent<PlayerHealth>()?.TakeDamage(damage); // Apply damage to the player
-            }
+            playerHealth?.TakeDamage(damage);
         }
     }
 }
