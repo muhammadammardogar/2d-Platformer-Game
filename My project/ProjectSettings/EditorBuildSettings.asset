@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/backup2.unity
     guid: 66972d64b1e714c4c9278eaa86d581fa
+  - enabled: 1
+    path: Assets/Scenes/updated lvl1.unity
+    guid: 668ca2e9bdbfd10428eafa6a242a9af2
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: a8e7408e3bfd82e4fa9455c5d18eb231
   m_configObjects: {}

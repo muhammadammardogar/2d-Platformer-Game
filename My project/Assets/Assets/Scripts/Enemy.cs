@@ -20,7 +20,7 @@ public class EnemyBehavior : MonoBehaviour
     private Collider2D swordCollider;
 
     [Header("Audio Settings")]
-    [SerializeField] private AudioSource attackSound; //  Attack sound
+    [SerializeField] private AudioSource attackSound; // Attack sound
 
     private void Start()
     {
@@ -47,7 +47,6 @@ public class EnemyBehavior : MonoBehaviour
             return;
         }
 
-        // Stop enemy actions if player is dead
         if (playerHealth == null || playerHealth.IsDead())
         {
             StopAllActions();
@@ -120,20 +119,16 @@ public class EnemyBehavior : MonoBehaviour
         {
             isAttacking = true;
 
-            // Stop attack if player is dead
             if (playerHealth.IsDead())
             {
                 StopAllActions();
                 return;
             }
 
-            bool useFirstAttack = Random.value > 0.5f;
-            animator.SetBool("Attack1", useFirstAttack);
-            animator.SetBool("Attack2", !useFirstAttack);
+            animator.SetBool("Attack1", true);
 
             EnableSwordCollider();
 
-            // Play the attack sound 
             if (attackSound != null && !attackSound.isPlaying)
             {
                 attackSound.Play();
@@ -147,7 +142,6 @@ public class EnemyBehavior : MonoBehaviour
     {
         isAttacking = false;
         animator.SetBool("Attack1", false);
-        animator.SetBool("Attack2", false);
     }
 
     private void EnableSwordCollider()
@@ -191,7 +185,6 @@ public class EnemyBehavior : MonoBehaviour
         isRoaming = false;
         animator.SetBool("IsWalking", false);
         animator.SetBool("Attack1", false);
-        animator.SetBool("Attack2", false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

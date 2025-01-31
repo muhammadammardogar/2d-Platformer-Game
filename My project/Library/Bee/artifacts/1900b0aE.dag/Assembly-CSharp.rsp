@@ -379,6 +379,7 @@
 "Assets/Assets/Scripts/DestroyEvent_HeroKnight.cs"
 "Assets/Assets/Scripts/Enemy.cs"
 "Assets/Assets/Scripts/GameOver.cs"
+"Assets/Assets/Scripts/HeavyBandit.cs"
 "Assets/Assets/Scripts/HeroKnight.cs"
 "Assets/Assets/Scripts/PauseMenu.cs"
 "Assets/Assets/Scripts/Player health.cs"

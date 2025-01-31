@@ -236,6 +236,11 @@ public class HeroKnight : MonoBehaviour
             {
                 collInfo.gameObject.GetComponent<EnemyBehavior>().TakeDamage(20);
             }
+
+            else if (collInfo.gameObject.GetComponent<HeavyBandit>() != null)
+            {
+                collInfo.gameObject.GetComponent<HeavyBandit>().TakeDamage(20);
+            }
         }
     }
 
