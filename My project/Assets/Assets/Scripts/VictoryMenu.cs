@@ -7,9 +7,12 @@ public class VictoryManager : MonoBehaviour
     public GameObject victoryScreenUI; // UI panel for victory
     public GameObject[] uiElementsToHide; // Other UI elements to hide
     public TextMeshProUGUI coinText; // Reference to the UI text showing collected coins
+    public RectTransform cursor; // Assign the cursor image
+    public GameObject[] menuOptions; // Assign all menu options in order (Play Again, Next Level, Quit)
 
     private bool gameWon = false;
     private int requiredCoins = 5; // Coins needed to win
+    private int selectedIndex = 0;
 
     private void Start()
     {
@@ -35,6 +38,58 @@ public class VictoryManager : MonoBehaviour
         {
             ui.SetActive(false);
         }
+
+        MoveCursor(); // Position cursor on first option
+    }
+
+    void Update()
+    {
+        if (gameWon)
+        {
+            HandleMenuNavigation();
+        }
+    }
+
+    void HandleMenuNavigation()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            selectedIndex = (selectedIndex - 1 + menuOptions.Length) % menuOptions.Length;
+            MoveCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            selectedIndex = (selectedIndex + 1) % menuOptions.Length;
+            MoveCursor();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            ExecuteSelectedOption();
+        }
+    }
+
+    void MoveCursor()
+    {
+        Vector3 optionPosition = menuOptions[selectedIndex].transform.position;
+        float offsetX = -315f; // Move cursor to the left of the selected option
+        cursor.position = new Vector3(optionPosition.x + offsetX, optionPosition.y, optionPosition.z);
+    }
+
+    void ExecuteSelectedOption()
+    {
+        switch (selectedIndex)
+        {
+            case 0:
+                NextLevel();
+                break;
+            case 1:
+                PlayAgain();
+                break;
+            case 2:
+                QuitGame();
+                break;
+        }
     }
 
     int GetCurrentCoinCount()
@@ -56,7 +111,7 @@ public class VictoryManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit(); // Quit game (only works in build)
-        Debug.Log("Game Quit");
+        Time.timeScale = 1f; // Ensure time is reset before quitting
+        SceneManager.LoadScene(0);
     }
 }

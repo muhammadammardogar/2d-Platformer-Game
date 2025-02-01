@@ -381,6 +381,7 @@
 "Assets/Assets/Scripts/GameOver.cs"
 "Assets/Assets/Scripts/HeavyBandit.cs"
 "Assets/Assets/Scripts/HeroKnight.cs"
+"Assets/Assets/Scripts/Main Menu.cs"
 "Assets/Assets/Scripts/PauseMenu.cs"
 "Assets/Assets/Scripts/Player health.cs"
 "Assets/Assets/Scripts/Sensor_HeroKnight.cs"

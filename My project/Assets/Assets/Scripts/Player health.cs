@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro; // Import TextMeshPro namespace
+using TMPro; 
 
 public class PlayerHealth : MonoBehaviour
 {
